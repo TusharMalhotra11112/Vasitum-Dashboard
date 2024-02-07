@@ -25,6 +25,9 @@ body{
     flex-direction: column;
     gap: 20px;
 }
+.sidebarTab:hover{
+    cursor: pointer;
+}
 .sidebarLogo{
     justify-self: center;
     align-self: center;   
@@ -40,8 +43,8 @@ body{
     margin: 10px;
 }
 .active{
-    color: #FF5151;
     fill: #FF5151;
+    color: #ff5151;
 }
 
 .mainMenu>*,.other>*{
