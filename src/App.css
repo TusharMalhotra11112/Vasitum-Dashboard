@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    overflow-y: hidden;
+}
+
+.App{
+    display: flex;
+    gap: 20px;
+}
+
+/* --------------------------- */
+
+.sidebar{
+    background-color: #FAFAFA;
+    flex: 0.16;
+    height: 100vh;
+    margin-right: 10px;    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.sidebarLogo{
+    justify-self: center;
+    align-self: center;   
+}
+.mainMenu,.other{
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.sideBarText{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin: 10px;
+}
+.active{
+    color: #FF5151;
+    fill: #FF5151;
+}
+
+.mainMenu>*,.other>*{
+    margin: 10px;
+    align-items: center;
+    display: flex;
+    gap: 5px;
+
+}
+/* ---------------------------------- */
+
+.main{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+/* -------------------------------- */
+.header{
+    display: flex;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+}
+.searchTab{
+    display: flex;
+    border: 1px solid #E0E0E0;
+    height: 40%;
+    align-items: center;
+    flex: 0.3;
+    margin: 10px;
+    margin-left: 15px;
+    background-color: #FAFAFA;
+}
+.searchField{
+    flex: 1;
+    border: none;
+    margin: 5px;
+}
+.searchField:focus-visible{
+    outline: none;
+}
+
+.searchIcon{
+    width: 20px;
+    height: 20px;
+}
+
+.profile{
+    margin-right: 50px;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon{
+    width: 24px;
+    height: 24px;
+}
+.pfp{
+    width: 42px;
+    height: 42px;
+}
+
+.user{
+    display: flex;
+    gap: 20px;
+}
+.userData{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dashboard{
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    padding: 5px;
+    padding-left: 15px;
+}
+
+/* --------------------------------------------- */
+
+.content{
+    display: flex;
+    flex: 1;
+}
+.leftContent{
+    display: flex;
+    flex-direction: column;
+    flex: 0.6;
+}
+.contentData{
+    display: flex;
+    flex: 0.2;
+}
+.availablePosition,.jobOpen,.newEmployee{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 5px;
+    border-radius: 20px;
+    padding: 12px;
+    padding-left: 20px;
+}
+.availablePosition{
+    background-color: #FFEFE7;
+}
+.jobOpen{
+    background-color: #E8F0FB;
+}
+.newEmployee{
+    background-color: #FDEBF9;
+}
+.top{
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+.middle{
+    font-size: 36px;
+    font-family: 'Poppins', sans-serif;
+}
+.bottom{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+.availablePosition>.bottom{
+    color: #FF5151;
+}
+.jobOpen>.bottom{
+    color: #3786F1;
+}
+.newEmployee>.bottom{
+    color: #EE61CF;
+}
+
+/* ----------------------------------------------- */
+
+.totalContent{
+    display: flex;
+    gap: 20px;
+    flex: 0.3;
+}
+
+.totalEmployee,.talentRequest{
+    display: flex;
+    flex: 1;
+    margin: 5px;
+    border-radius: 20px;
+    border: 1px solid #E0E0E0;
+    padding: 15px;
+}
+.totalLeftTopTop{
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+.totalLeftTopBottom{
+    font-size: 48px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.totalLeftBottomTop,.totalLeftBottomBottom{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    color: #686868;
+}
+
+.totalRight{
+    margin-right: 10px;
+    margin-left: auto;
+}
+
+/* -------------------------------------------------------- */
+
+.announcement{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    flex: 0.5;
+    margin: 10px;
+    border: 1px solid #E0E0E0;
+    border-radius: 20px;
+}
+.announcementText{
+    margin: 5px;
+    margin-left: 20px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    flex: 1;
+
+}
+.announcementCalander{
+    border: 1px solid #EFEFEF;
+    margin: 10px;
+}
+
+.announcementHead{
+    display: flex;
+}
+.announcementSection{
+    flex: 1;
+}
+.announcementTab{
+    display: flex;
+    border: 0.5px solid #E0E0E0;
+    margin: 5px;
+    margin-left: 20px;
+    flex: 1;
+    background-color: #FAFAFA;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.announcementDataHead{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+.announcementData{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 10px;
+}
+.announcementTime{
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+}
+.announcementImg{
+    height: 24px;
+    display: flex;
+    gap: 12px;
+    margin-right: 10px;
+}
+.announcementImg>*{
+    width: 24px;
+    height: 24px;
+}
+.announcementAll{
+    color: #FF5151;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    align-self: center;
+    justify-self: center;
+}
+
+
+/* ------------------------------------- */
+
+.rightContent{
+    flex: 0.4;
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+}
+
+.recentActivity{
+    margin: 5px;
+    margin-left: 10px;
+    flex: 0.4;
+    background-color: #121843;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.recentHead{
+    background-color: #1B204A;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 10px;
+    padding-left: 20px;
+}
+.recentContent{
+    padding: 10px;
+    padding-left: 20px;
+    flex: 1;
+    margin-top: 20px;
+}
+.recentTime{
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    color: #a0a3b4;
+}
+.recentContentHead{
+    font-family: 'Poppins',sans-serif;
+    font-size: 18px;
+}
+.recentContentDetail{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #a0a3b4;
+}
+
+.recentFooter{
+    padding: 10px;
+    padding-left: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.recentFooterText{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    flex: 1;
+}
+.recentFooterButton{
+    background-color: #FF5151;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    padding: 10px;
+    margin-right: 40px;
+}
+
+/* ---------------------------------------- */
+
+.upcomingSchedule{
+    margin: 10px;
+    flex: 0.6;
+    border: 1px solid #E0E0E0;
+    border-radius: 20px;
+    padding: 5px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.upcomingHead{
+    display: flex;
+}
+.upComingText{
+    color: #161E54;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    flex: 1;
+}
+.upcomingPriorityText{
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    
+}
+.scheduleTab{
+    background-color: #FAFAFA;
+    border: 0.5px solid #E0E0E0;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.scheduleData{
+    display: flex;
+    flex-direction:column ;
+}
+.scheduleDataHead{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+.scheduleDataTime{
+    font-family: 'Roboto',sans-serif;
+    font-size: 10px;
+}
+
+.upcomingDots{
+    width: 24px;
+    margin-right: 10px;
+    margin-left: auto;
+}
+.scheduleFooter{
+    color: #FF5151;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    align-self: center;
+    justify-self: center;
+
+}
