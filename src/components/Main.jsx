@@ -5,10 +5,10 @@ import p5 from '../images/+5.png'
 import pin from '../images/pin.png'
 import dots from '../images/3dots.png'
 
-export default function Main() {
+export default function Main({drop,setDrop}) {
   return (
     <div className='main'>
-        <Header/>
+        <Header drop={drop} setDrop={setDrop}/>
         <div className='dashboard'>Dashboard</div>
         <div className="content">
             <div className="leftContent">

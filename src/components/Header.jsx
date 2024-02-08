@@ -1,13 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import search from '../images/search.png'
 import notification from '../images/Notification.png'
 import messages from '../images/Messages.png'
 import pfp from '../images/pfp.png'
 import downarrow from '../images/downarrow.png'
+import lines from '../images/3Lines.png'
 
-export default function Header() {
-  return (
+export default function Header({drop,setDrop}) {
+  const show = ()=>{
+    setDrop((prev)=>{
+        return(!prev)
+    })
+  }
+  
+    return (
     <div className='header'>
+        <img src={lines} alt="3Lines" className='dropdown' onClick={show}/>
         <div className="searchTab">
             <input type='text' className='searchField' placeholder='Search'></input>
             <img src={search} alt="search" className='searchIcon'/>

@@ -25,6 +25,10 @@ body{
     flex-direction: column;
     gap: 20px;
 }
+.sidebarEle{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
 .sidebarTab:hover{
     cursor: pointer;
 }
@@ -67,6 +71,9 @@ body{
     height: 10vh;
     justify-content: center;
     align-items: center;
+}
+.dropdown{
+    display: none;
 }
 .searchTab{
     display: flex;
@@ -162,6 +169,7 @@ body{
 .top{
     font-size: 18px;
     font-family: 'Poppins', sans-serif;
+    flex: 1;
 }
 .middle{
     font-size: 36px;
@@ -424,5 +432,168 @@ body{
     font-size: 14px;
     align-self: center;
     justify-self: center;
+}
 
+
+/* ------------------------------------------- */
+@media screen and (max-width:426px){
+    .header{
+        margin: 10px;
+    }
+    .searchTab{
+        background-color: white;
+        border: none;
+        flex: 0;
+    }
+    .searchField{
+        display: none;
+    }
+    .userName{
+        display: none;
+    }
+    .profile{
+        margin-right: 0px;
+    }
+    .dashboard{
+        font-size: 20px;
+    }
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    .content{
+        flex-direction: column;
+        margin: 10px;
+        padding: 0px !important;
+    }
+    .leftContent{
+        flex-direction: column;
+    }
+    .contentData{
+        flex-direction: column;
+    }
+    .totalContent{
+        flex-direction: column;
+    }
+    .rightContent{
+        flex-direction: column !important;
+    }
+    .smallHidden{
+        display: none;
+    }
+    .smallShow{
+        position: absolute;
+        right: 0;
+        border-left: 1px solid #eaeaee;
+    }
+}
+
+/* ----------------------------- */
+
+@media screen and (max-width:768px){
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    .main{
+        overflow-y: scroll;
+        height: 100vh;
+    }
+    .sidebarLogo{
+        content: url('../src/images/logo-short.png');
+        margin: 20px;
+    }
+    .sideBarText{
+        font-family: 'Roboto', sans-serif;
+        font-size: 10px;
+    }
+    .dropdown{
+        display: block;
+        width: 24px;
+        height: 24px;
+    }
+    .dashboard{
+        font-size: 24px;
+    }
+    .content{
+        flex-direction: column;
+        padding-right: 50px;
+    }
+    .top{
+        font-size: 16px;
+    }
+    .middle{
+        font-size: 32px;
+    }
+    .bottom{
+        font-size: 14px;
+    }
+    .totalLeftTopTop{
+        font-size: 16px;
+    }
+    .totalLeftTopBottom{
+        font-size: 42px;
+    }
+    .totalLeftBottomTop,.totalLeftBottomBottom{
+        font-size: 12px;
+    }
+    .announcementText{
+        font-size: 16px;
+    }
+    .announcementDataHead{
+        font-size: 15px;
+    }
+    .announcementTime{
+        font-size: 10px;
+    }
+    .announcementAll{
+        font-size: 14px;
+    }
+    .rightContent{
+        flex-direction: row;
+        margin: 0px;
+        padding: 0px;
+    }
+    .recentHead{
+        font-size: 16px;
+    }
+    .recentTime{
+        font-size: 10px;
+    }
+    .recentContentHead{
+        font-size: 16px;
+    }
+    .recentContentDetail{
+        font-size: 14px;
+    }
+    .recentFooter{
+        flex-direction: column;
+    }
+    .recentFooterText{
+        font-size: 14px;
+    }
+    .recentFooterButton{
+        font-size: 14px;
+    }
+    .upComingText{
+        font-size: 16px;
+    }
+    .upcomingPriorityText{
+        font-size: 12px;
+    }
+    .scheduleDataHead{
+        font-size: 14px;
+    }
+    .scheduleDataTime{
+        font-size: 10px;
+    }
+    .scheduleFooter{
+        font-size: 14px;
+    }
+    .full{
+        content: url(../src/images/logo.png);
+    }
+    .hidden {
+        display: none !important;
+    }
 }
