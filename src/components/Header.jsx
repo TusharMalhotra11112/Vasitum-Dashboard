@@ -12,13 +12,18 @@ export default function Header({drop,setDrop}) {
         return(!prev)
     })
   }
-  
+  const [s,sS] = useState(false)
+
+  const change = ()=>{
+    console.log(s)
+    sS((s)=>{return(true)})
+  }
     return (
     <div className='header'>
         <img src={lines} alt="3Lines" className='dropdown' onClick={show}/>
-        <div className="searchTab">
-            <input type='text' className='searchField' placeholder='Search'></input>
-            <img src={search} alt="search" className='searchIcon'/>
+        <div className={"searchTab"}>
+            <input type='text' className={"searchField"+ (s?" showS":" dropS")} placeholder='Search'></input>
+            <img src={search} alt="search" className='searchIcon' onClick={change}/>
         </div>
         <div className="profile">
             <img src={notification} alt="notification" className='icon'/>

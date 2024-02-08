@@ -80,15 +80,16 @@ body{
     border: 1px solid #E0E0E0;
     height: 40%;
     align-items: center;
-    flex: 0.3;
+    flex: 0.6;
     margin: 10px;
     margin-left: 15px;
     background-color: #FAFAFA;
 }
 .searchField{
-    flex: 1;
     border: none;
     margin: 5px;
+    width: 10px;
+    flex: 1;
 }
 .searchField:focus-visible{
     outline: none;
@@ -446,7 +447,7 @@ body{
         flex: 0;
     }
     .searchField{
-        display: none;
+        width: 100px;
     }
     .userName{
         display: none;
@@ -485,6 +486,12 @@ body{
         position: absolute;
         right: 0;
         border-left: 1px solid #eaeaee;
+    }
+    .showS{
+        display: block !important;
+    }
+    .dropS{
+        display: none !important;
     }
 }
 
